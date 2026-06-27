@@ -20,18 +20,17 @@ module main_memory
     // 2-byte Cache Block Output
     output reg [15:0] block_data
 );
-
-    //--------------------------------------------------
+ 
     // Memory Array
-    //--------------------------------------------------
+    
 
     reg [DATA_WIDTH-1:0] memory [0:MEM_SIZE-1];
 
     integer i;
 
-    //--------------------------------------------------
+     
     // Initialize Memory
-    //--------------------------------------------------
+   
 
     initial
     begin
@@ -39,9 +38,9 @@ module main_memory
             memory[i] = i;
     end
 
-    //--------------------------------------------------
+    
     // Write Logic
-    //--------------------------------------------------
+ 
 
     always @(posedge clk)
     begin
@@ -49,12 +48,11 @@ module main_memory
             memory[address] <= data_in;
     end
 
-    //--------------------------------------------------
+     
     // Continuous Read Logic
-    //--------------------------------------------------
+ 
     // Align address to 2-byte block boundary
-    //--------------------------------------------------
-
+    
     always @(*)
     begin
         block_data[7:0]  = memory[{address[7:1],1'b0}];
