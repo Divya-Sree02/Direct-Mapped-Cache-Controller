@@ -14,9 +14,9 @@ module address_decoder
     output offset
 );
 
-    //---------------------------------------------------
+   
     // Address Breakdown
-    //---------------------------------------------------
+ 
 
     assign tag    = address[7:3];
 
