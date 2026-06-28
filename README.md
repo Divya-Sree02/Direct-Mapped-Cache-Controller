@@ -1,5 +1,4 @@
-# Direct-Mapped-Cache-Controller
-RTL implementation of a Direct-Mapped Cache Controller in Verilog HDL with address decoding, hit/miss detection, FSM-based control, and main memory integration.
+ 
 # Direct-Mapped Cache Controller
 
 A **Verilog HDL** implementation of a **Direct-Mapped Cache Controller** that interfaces between the CPU and main memory. The controller reduces memory access latency through efficient cache management using hit/miss detection, address decoding, FSM-based control, and automatic cache updates. The design was developed and verified using **Xilinx Vivado**.
